@@ -5,8 +5,8 @@ import handleErrorMdw from './middlewares/handleError.mdw.js';
 import cors from 'cors';
 import appRouter from './routes/index.js';
 
-const whiteList = ["http://localhost:3001","https://baya-client.onrender.com/",];
-
+const whiteList = ["https://baya-client.onrender.com/",];
+//"http://localhost:3001",
 const corsOptions = {
   origin: (origin, callback) => {
     if (process.env.NODE_ENV === 'development') {
